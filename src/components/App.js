@@ -1,14 +1,15 @@
 import Navbar from './Navbar';
-import Meat from './images/smoked.jpg'
+import Smoke from './images/smoke.jpg'
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Navbar />
-  
+
       <div className='landing'>
-      <h1>Kevs Smoke Shack.</h1>
-      <img src={Meat} alt="" />
+      <h1>I Want What He's Smoking.</h1>
+      <img src={Smoke} alt="" />
+      <button> <Link to='/shop'>Enter SHop </Link > </button>
       </div>
     </div>
   );
