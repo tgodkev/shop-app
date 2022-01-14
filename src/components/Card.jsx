@@ -1,4 +1,4 @@
-import { dividerClasses } from '@mui/material';
+
 import React from 'react';
 
 function Card(props){
@@ -9,7 +9,9 @@ function Card(props){
             <h1>{props.name}</h1>
             <img src={props.img} alt="" />
             <h2>{props.price}</h2>
-            <h4> {props.description} </h4>
+           <button onClick={props.add}>
+               add to cart
+           </button>
             </div>
             </div>
         </div>
