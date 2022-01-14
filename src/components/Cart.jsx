@@ -1,11 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-function Cart(){
+function Cart(props){
     return(
         <div >
             <Navbar />
-            <h2>hello from Cart</h2>
+            <h1>{props.name}</h1>
+            <h2>{props.price}</h2>
+            <h3>{props.amount}</h3>
 
         </div>
     )

@@ -24,7 +24,7 @@ import weber from './images/weber.jpeg'
                         <h2>$499</h2>
                         <button
                         name={'bronco drum smoker'}
-                        value={'$499'}
+                        value={"$499"}
                         onClick={props.add}
                         >add to cart.</button>
                 </div>
@@ -32,21 +32,41 @@ import weber from './images/weber.jpeg'
                     <h1>Longhorn Reverse Flow offset</h1>
                     <img src={longhorn} alt="" />
                         <h2>$799</h2>
+                        <button
+                        name={'Longhorn Reverse Flow.'}
+                        value={"$799"}
+                        onClick={props.add}
+                        >add to cart.</button>
                 </div>
                 <div>
                     <h1>Loaded Wichita</h1>
                     <img src={wichita} alt="" />
                         <h2>$2,729</h2>
+                        <button
+                        name={'Loaded Wichita'}
+                        value={"$2,729"}
+                        onClick={props.add}
+                        >add to cart.</button>
                 </div>
                 <div>
                     <h1>lang 36" smoker series'</h1>
                     <img src="" alt="" />
                         <h2>$499</h2>
+                        <button
+                        name={'Lang 36"'}
+                        value={"$2,195"}
+                        onClick={props.add}
+                        >add to cart.</button>
                 </div>
                 <div>
                     <h1>Smokey Mountain 22inch.</h1>
                     <img src={weber} alt="" />
                         <h2>$499</h2>
+                        <button
+                        name={'Smokey Mountain 22'}
+                        value={"$499"}
+                        onClick={props.add}
+                        >add to cart.</button>
                 </div>
             
             
