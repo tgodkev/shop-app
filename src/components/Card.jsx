@@ -1,15 +1,15 @@
 
 import React from 'react';
 
-function Card(props){
+function Card(products, props){
     return(
         <div>
         <div className='shop'>
         <div className='item'>
-            <h1>{props.name}</h1>
-            <img src={props.img} alt="" />
-            <h2>{props.price}</h2>
-           <button onClick={props.add}>
+            <h1>{products.name}</h1>
+            <img src={products.img} alt="" />
+            <h2>{products.price}</h2>
+           <button onClick={props.handle}>
                add to cart
            </button>
             </div>

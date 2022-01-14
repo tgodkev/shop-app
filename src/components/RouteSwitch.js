@@ -6,10 +6,17 @@ import Cart from "./Cart";
 
 function RouteSwitch(){
 
-    const[item, setItem] = useState('')
+    const[item, setItem] = useState({
+        name: "",
+        price: "",
+    })
     
-    function addItem() {
-        setItem('item clicked');
+    function addItem(e) {
+        const {value, price} = e.target;
+        setItem();
+
+
+
         console.log(item);
     }
 
@@ -19,7 +26,8 @@ function RouteSwitch(){
             <Routes>
                 <Route path='/' element={<App />} />
                 <Route path='/shop' element={<Shop add={addItem} />} />
-                <Route path='/cart' element={<Cart />} />
+                <Route path='/cart' element={<Cart /> } />
+                
             </Routes>
         </BrowserRouter>
     )
