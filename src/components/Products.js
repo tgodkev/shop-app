@@ -1,12 +1,13 @@
  
-
+import { Link } from "react-router-dom";
 const products = [
    {
        id:'1',
        name:' Oklahoma Joes Bronco Drum Smoker',
        description: ' The Oklahoma Joe’s® Bronco Drum Smoker has a unique airflow control system and sealed lid that deliver precise control over smoke and heat. Its movable grate and additional meat hangers let you customize your setup your way, while the oversized charcoal basket holds enough fuel for all-day smoke therapy.',
        img : 'https://www.oklahomajoes.com/media/catalog/product/cache/ade67a2a5fb1e95775b8850c7ff18d43/f/a/fac2481c9591efe366181419ab3063fcd0ae4bf1.png',
-       price: '$499'
+       price: '$499',
+       link: <Link to='/' >home</Link>
    },
    {
     id:'2',

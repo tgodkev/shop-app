@@ -4,25 +4,27 @@ import Card from "./Card";
 import products from "./Products";
 
 
-function createCard(products){
-    return(
-        <Card 
-            id={products.id}
-            key={products.id}
-            name={products.name}
-            description={products.description}
-            img={products.img}
-            price={products.price}
-        />
-    )
-}
+ 
 
-function Shop(){
+ function Shop(props){
+    function createCard(products, props){
+        return(
+            <Card 
+                id={products.id}
+                key={products.id}
+                name={products.name}
+                description={products.description}
+                img={products.img}
+                price={products.price}
+                link={products.link}
+                add={props.add}
+            />
+        )
+    }
     return(
         <div>
         <Navbar />
             {products.map(createCard)}
-          
          </div>
     )
 }
