@@ -6,7 +6,7 @@ import Okj from "./images/okjbronco.png"
 import longhorn from "./images/longhorn.png"
 import wichita from './images/wichita.jpg'
 import weber from './images/weber.jpeg'
-
+import lang from './images/lang.jpg'
 
 
 
@@ -17,18 +17,22 @@ import weber from './images/weber.jpeg'
     return(
         <div>
         <Navbar />
-            <div>
-                <div>
+            <div className="container">
+                <div className="one">
                     <h1>Oklahoma Joes Bronco Drum Smoker'</h1>
                     <img src={Okj} alt="" />
                         <h2>$499</h2>
+
                         <button
                         name={'bronco drum smoker'}
                         value={"$499"}
                         onClick={props.add}
+                        img={'./images/okj.png'}
                         >add to cart.</button>
+                        
                 </div>
-                <div>
+
+                <div className="two">
                     <h1>Longhorn Reverse Flow offset</h1>
                     <img src={longhorn} alt="" />
                         <h2>$799</h2>
@@ -38,7 +42,7 @@ import weber from './images/weber.jpeg'
                         onClick={props.add}
                         >add to cart.</button>
                 </div>
-                <div>
+                <div className="three">
                     <h1>Loaded Wichita</h1>
                     <img src={wichita} alt="" />
                         <h2>$2,729</h2>
@@ -48,9 +52,9 @@ import weber from './images/weber.jpeg'
                         onClick={props.add}
                         >add to cart.</button>
                 </div>
-                <div>
+                <div className="four">
                     <h1>lang 36" smoker series'</h1>
-                    <img src="" alt="" />
+                    <img src={lang} alt="" />
                         <h2>$499</h2>
                         <button
                         name={'Lang 36"'}
@@ -58,13 +62,13 @@ import weber from './images/weber.jpeg'
                         onClick={props.add}
                         >add to cart.</button>
                 </div>
-                <div>
+                <div className="five">
                     <h1>Smokey Mountain 22inch.</h1>
                     <img src={weber} alt="" />
                         <h2>$499</h2>
                         <button
-                        name={'Smokey Mountain 22'}
-                        value={"$499"}
+                        name='Smokey Mountain 22'
+                        value= '$499'
                         onClick={props.add}
                         >add to cart.</button>
                 </div>

@@ -7,7 +7,10 @@ body{
 .nav{
     position: sticky;
     width: 100%;
-    border: solid;
+    
+}
+.cart{
+    margin-left: 50%;
 }
 
 
@@ -27,10 +30,6 @@ body{
    
 }
 
-.landing h1{
-   
-  
-}
 
 .landing button{
     height: 20%;
@@ -40,21 +39,59 @@ body{
     margin-left: 80%;
 }
 
-.shop{
-   display: grid;
-   grid-template-rows: 30% 30% ;
-   grid-template-columns: 30% 30%;
+.container{
+    display: grid;
+    width: auto;
+    height: auto;
 }
 
-.item   {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    border: solid;
-    height: 30%;
-    width: 30%;
+.one{
+    display: block;
+    text-align: center;
 }
 
-.item img{
-    height: 50%;
-    width: 50%;
+.one img{
+    height: 80%;
+   width: auto;
+}
+
+.two{
+    display: block;
+    text-align: center;
+   
+}
+
+.two img{
+   height: 80%;
+   width: auto;
+}
+
+.three{
+    display: block;
+    text-align: center;
+}
+
+.three img{
+    height: 80%;
+   width: auto;
+}
+
+.four{
+    display: block;
+    text-align: center;
+}
+
+.four img{
+    height: 80%;
+   width: auto;
+}
+
+.five{
+      display: block;
+    text-align: center;
+}
+
+.five img{
+    height: 80%;
+    width: auto;
 }

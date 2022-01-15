@@ -8,6 +8,11 @@ function Cart(props){
             <h1>{props.name}</h1>
             <h2>{props.price}</h2>
             <h3>{props.amount}</h3>
+            <button
+            onClick={() => {
+                alert('you have checked out.')
+            }}
+            >Check out.</button>
 
         </div>
     )

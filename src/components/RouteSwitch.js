@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import App from "./App";
 import Shop from "./Shop";
 import Cart from "./Cart";
+import Navbar from "./Navbar";
+
+
+
 
 function RouteSwitch(){
 
@@ -10,17 +14,19 @@ function RouteSwitch(){
     const[itemName, setItemName] = useState('');
     const[quantity, setQuantity] = useState(0);
     
+
     function addItem(e) {
         
-            setItemPrice(e.target.value);
-            setItemName(e.target.name)
-            setQuantity(quantity + 1);
+        setItemPrice(e.target.value);
+        setItemName(e.target.name)
+        setQuantity(quantity + 1);
 
 
-        console.log(itemPrice);
-        console.log(itemName)
-        console.log(quantity)
-    }
+    console.log(itemPrice);
+    console.log(itemName)
+    console.log(quantity)
+}
+    
 
 
     return(
@@ -29,6 +35,7 @@ function RouteSwitch(){
                 <Route path='/' element={<App />} />
                 <Route path='/shop' element={<Shop add={addItem} />} />
                 <Route path='/cart' element={<Cart price={itemPrice} name={itemName} amount={quantity}  /> } />
+                <Route path='/navbar' element={<Navbar amount={quantity} />} />
                 
             </Routes>
         </BrowserRouter>
