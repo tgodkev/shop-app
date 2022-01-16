@@ -9,9 +9,17 @@ body{
     width: 100%;
     
 }
+
+
 .cart{
     margin-left: 40%;
     margin-top: 10%;
+    border: solid;
+    width: 20%;
+}
+
+.cart:hover{
+    transform: rotate(1deg);
 }
 
 
@@ -19,19 +27,17 @@ body{
 
 
 .landing{
-    position: relative;
     height: 100%;
     width: 100%;
+    position: relative;
     color: red;
+    background-image: url(./smoke.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+    padding-bottom: 25%;
 }
 
 
-.landing img{
-   width: auto;
-   height: 50%;
-   position: absolute;
-   
-}
 
 
 .landing button{
@@ -39,7 +45,7 @@ body{
     width: 20%;
     background-color: lightblue;
     margin-top: 20%;
-    margin-left: 80%;
+    margin-left: 40%;
 }
 
 .container{

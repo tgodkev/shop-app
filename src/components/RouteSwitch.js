@@ -13,18 +13,30 @@ function RouteSwitch(){
     const[itemPrice, setItemPrice] = useState('');
     const[itemName, setItemName] = useState('');
     const[quantity, setQuantity] = useState(0);
+
+    const[cart, setCart] = useState({
+        name: '',
+        price: '',
+
+    })
     
 
     function addItem(e) {
+        const {name, value, amount } = e.target;
 
-
+        setCart( (prevValue) => {
+            return{
+                ...prevValue,
+                [name]: itemName,
+                [value]: itemPrice,
+                [amount]: quantity
+            }
+        } )
         setQuantity(quantity + 1);
-        setItemName(e.target.name)
-        setItemPrice(e.target.value)
-
-    console.log(itemPrice);
-    console.log(itemName)
-    console.log(quantity)
+        
+      setItemName(e.target.name)
+      setItemPrice(e.target.value)
+console.log(cart);
 }
     
 
@@ -43,3 +55,7 @@ function RouteSwitch(){
 }
 
 export default RouteSwitch;
+
+//setQuantity(quantity + 1);
+//setItemName(e.target.name)
+//setItemPrice(e.target.value)
