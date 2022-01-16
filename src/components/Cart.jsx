@@ -8,7 +8,7 @@ function Cart(props){
             <div className="cart">
             <h1>{props.name}</h1>
             <h2>{props.price}</h2>
-            <h3>{props.amount}</h3>
+            <h3>total items {props.amount}</h3>
             <button
             onClick={() => {
                 alert('you have checked out.')

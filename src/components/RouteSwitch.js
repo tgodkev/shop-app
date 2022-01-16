@@ -33,9 +33,10 @@ function RouteSwitch(){
             }
         } )
         setQuantity(quantity + 1);
-        
-      setItemName(e.target.name)
-      setItemPrice(e.target.value)
+        setItemName(e.target.name)
+        setItemPrice(e.target.value)
+
+     
 console.log(cart);
 }
     

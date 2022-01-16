@@ -29,7 +29,7 @@ function Navbar(props){
     return(
         <div className="nav">
           
-                
+          <Link to='/cart'> <ShoppingCartIcon/> </Link>
                 <h2>Menu{downArrow && <ArrowDropDownIcon onClick={both}/>} 
                 {upArrow && <ArrowDropUpIcon onClick={both} /> }
                 </h2>
@@ -42,8 +42,8 @@ function Navbar(props){
                 </ul>}
             </li>
         
-           <h1 > {props.amount} hi</h1>
-           <Link to='/cart'> <ShoppingCartIcon/> </Link>
+           <h1 > {props.amount} </h1>
+           
            
             
             
