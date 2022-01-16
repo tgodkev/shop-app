@@ -38,11 +38,13 @@ function Navbar(props){
                 <Link to='/'>Home</Link>
                 </ul>}
                 { menu && <ul>
-                <Link to='/shop'>Shop </Link>
+                <Link to='/shop'>Shop</Link>
                 </ul>}
             </li>
         
-           <h1 className="cart"> {props.amount}</h1>
+           <h1 > {props.amount} hi</h1>
+           <Link to='/cart'> <ShoppingCartIcon/> </Link>
+           
             
             
         </div>

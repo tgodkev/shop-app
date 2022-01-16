@@ -16,11 +16,11 @@ function RouteSwitch(){
     
 
     function addItem(e) {
-        
-        setItemPrice(e.target.value);
-        setItemName(e.target.name)
-        setQuantity(quantity + 1);
 
+
+        setQuantity(quantity + 1);
+        setItemName(e.target.name)
+        setItemPrice(e.target.value)
 
     console.log(itemPrice);
     console.log(itemName)
