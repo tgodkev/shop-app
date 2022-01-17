@@ -11,17 +11,16 @@ import Navbar from "./Navbar";
 function RouteSwitch(){
 
 
-    const[quantity, setQuantity] = useState(0);
 
     const[cart, setCart] = useState([{
         name: '',
         value: '',
-        amount: 0
+    
     }])
     
     
 
-    console.log(cart)
+    //console.log(cart)
     
 
     function addItem(e) {
@@ -32,11 +31,11 @@ function RouteSwitch(){
             {
                 name: e.target.name,
                 value: e.target.value,
-                amount: quantity
+            
             }
         ])
         
-        setQuantity(quantity + 1);
+
 
 
      
@@ -50,7 +49,7 @@ function RouteSwitch(){
                 <Route path='/' element={<App />} />
                 <Route path='/shop' element={<Shop add={addItem} />} />
                 <Route path='/cart' element={<Cart bag={cart} /> } />
-                <Route path='/navbar' element={<Navbar amount={quantity} />} />
+                <Route path='/navbar' element={<Navbar  />} />
                 
             </Routes>
         </BrowserRouter>

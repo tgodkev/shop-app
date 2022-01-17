@@ -4,7 +4,7 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from "react-router-dom";
 
-function Navbar(props){
+function Navbar(){
 
     const[ menu, setMenu] = useState(false);
     const[upArrow, setUpArrow] = useState(false);
@@ -29,9 +29,9 @@ function Navbar(props){
     return(
         <div className="nav">
           
-          <Link to='/cart'> <ShoppingCartIcon/> </Link>
-                <h2>Menu{downArrow && <ArrowDropDownIcon onClick={both}/>} 
-                {upArrow && <ArrowDropUpIcon onClick={both} /> }
+          
+                <h2>Menu{downArrow && <ArrowDropDownIcon onClick={both} className="arrow"/>} 
+                {upArrow && <ArrowDropUpIcon onClick={both} className="arrow" /> }
                 </h2>
                 <li>
                 { menu && <ul>
@@ -40,9 +40,9 @@ function Navbar(props){
                 { menu && <ul>
                 <Link to='/shop'>Shop</Link>
                 </ul>}
+                {menu && <ul> <Link to='/cart'> <ShoppingCartIcon/> </Link> </ul>}
             </li>
         
-           <h1 > {props.amount} </h1>
            
            
             

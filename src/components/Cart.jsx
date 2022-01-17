@@ -4,14 +4,14 @@ import Navbar from "./Navbar";
 
 function Cart(props){
     return(
-        <div>
+        <div className="checkout">
         <Navbar />
             <div className="cart">
             
-                {props.bag.map( cart => <li>{cart.name} {cart.value}</li>)}
+                {props.bag.map( cart => <h4>{cart.name} {cart.value}</h4>)}
             <button
             onClick={() => {
-                alert('you have checked out.')
+                alert('you have checked out, thank you for shopping with us!')
             }}
             >Check out.</button>
             </div>
@@ -20,5 +20,3 @@ function Cart(props){
 }
 
 export default Cart;
-
-// <h1>{props.name}: ${props.price}</h1>
