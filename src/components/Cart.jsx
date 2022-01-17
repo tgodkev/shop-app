@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "./Navbar";
 
@@ -6,9 +7,8 @@ function Cart(props){
         <div>
         <Navbar />
             <div className="cart">
-            <h1>{props.name}</h1>
-            <h2>{props.price}</h2>
-            <h3>total items {props.amount}</h3>
+            
+                {props.bag.map( cart => <li>{cart.name} {cart.value}</li>)}
             <button
             onClick={() => {
                 alert('you have checked out.')
@@ -20,3 +20,5 @@ function Cart(props){
 }
 
 export default Cart;
+
+// <h1>{props.name}: ${props.price}</h1>

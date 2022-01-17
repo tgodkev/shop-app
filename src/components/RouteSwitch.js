@@ -10,34 +10,36 @@ import Navbar from "./Navbar";
 
 function RouteSwitch(){
 
-    const[itemPrice, setItemPrice] = useState('');
-    const[itemName, setItemName] = useState('');
+
     const[quantity, setQuantity] = useState(0);
 
-    const[cart, setCart] = useState({
+    const[cart, setCart] = useState([{
         name: '',
-        price: '',
+        value: '',
+        amount: 0
+    }])
+    
+    
 
-    })
+    console.log(cart)
     
 
     function addItem(e) {
-        const {name, value, amount } = e.target;
+       
 
-        setCart( (prevValue) => {
-            return{
-                ...prevValue,
-                [name]: itemName,
-                [value]: itemPrice,
-                [amount]: quantity
+        setCart([
+            ...cart,
+            {
+                name: e.target.name,
+                value: e.target.value,
+                amount: quantity
             }
-        } )
+        ])
+        
         setQuantity(quantity + 1);
-        setItemName(e.target.name)
-        setItemPrice(e.target.value)
+
 
      
-console.log(cart);
 }
     
 
@@ -47,7 +49,7 @@ console.log(cart);
             <Routes>
                 <Route path='/' element={<App />} />
                 <Route path='/shop' element={<Shop add={addItem} />} />
-                <Route path='/cart' element={<Cart price={itemPrice} name={itemName} amount={quantity}  /> } />
+                <Route path='/cart' element={<Cart bag={cart} /> } />
                 <Route path='/navbar' element={<Navbar amount={quantity} />} />
                 
             </Routes>
@@ -57,6 +59,13 @@ console.log(cart);
 
 export default RouteSwitch;
 
-//setQuantity(quantity + 1);
-//setItemName(e.target.name)
-//setItemPrice(e.target.value)
+
+//trial function.
+{/*setCart( (prevValue) => {
+    return{
+        ...prevValue,
+        [name]: name,
+        [value]: value,
+        [amount]: quantity
+    }
+} ) */}
