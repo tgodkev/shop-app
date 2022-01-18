@@ -43,8 +43,8 @@ body{
 
 
 .landing{
-    height: auto;
-    width: auto;
+    min-height: auto;
+    min-width: auto;
     padding-top: 1%;
     position: relative;
     color: red;
@@ -52,7 +52,7 @@ body{
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-color: #0A100D;
-    padding-bottom: 24%;
+    padding-bottom: 25%;
     
 }
 
@@ -107,6 +107,7 @@ body{
 .two img{
     height: auto;
     width: 50%;
+    margin-left: 20%;
 }
 
 .two button{
@@ -170,7 +171,7 @@ body{
     text-align: center;
     background-color: #D6D5C9;
     height: auto;
-    width: auto;
+    width: 100%;
     grid-column: 1;
     grid: 2;
     margin-top: 10%;
