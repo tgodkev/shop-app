@@ -8,10 +8,21 @@ body{
 @media   screen {
     .container{
         display: grid;
-    grid-template-columns: 20% 20% 20% ;
-    grid-template-rows: 20% 20% 20%;
+    grid-template-columns: 50% 50% 50% ;
+    grid-template-rows: 50% 50% 50%;
     margin-top: 10%;
-    margin-left: 10%;
+    height: auto;
+    width: auto;
+    }
+
+    .landing{
+        height: auto;
+        width: auto;
+        padding-bottom: 86%;
+    }
+
+    .checkout{
+        padding-bottom: 99%;
     }
 
     
@@ -35,7 +46,6 @@ body{
 .checkout{
     height: 100%;
     width: 100%;
-    padding-bottom: 32%;
     background-color: #B9BAA3;
 }
 
@@ -65,7 +75,6 @@ body{
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-color: #0A100D;
-    padding-bottom: 25%;
     
 }
 
@@ -75,14 +84,7 @@ body{
 }
 
 
-.container{
-    display: grid;
-    grid-template-columns: 40% 40% 40% ;
-    grid-template-rows: 40% 40% 40%;
-    margin-top: 10%;
-    margin-left: 10%;
 
-}
 
 .one{
     display: inline-grid;
@@ -169,7 +171,7 @@ body{
 
 .four img{
    height: auto;
-   width: 50%;
+   width: 60%;
    margin-left: 25%;
 }
 
