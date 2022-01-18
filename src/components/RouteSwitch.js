@@ -34,11 +34,7 @@ function RouteSwitch(){
             
             }
         ])
-        
-
-
-
-     
+            
 }
     
 
