@@ -59,12 +59,3 @@ function RouteSwitch(){
 export default RouteSwitch;
 
 
-//trial function.
-{/*setCart( (prevValue) => {
-    return{
-        ...prevValue,
-        [name]: name,
-        [value]: value,
-        [amount]: quantity
-    }
-} ) */}

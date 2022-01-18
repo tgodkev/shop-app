@@ -43,8 +43,8 @@ body{
 
 
 .landing{
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     padding-top: 1%;
     position: relative;
     color: red;
@@ -52,7 +52,8 @@ body{
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-color: #0A100D;
-    padding-bottom: 25%;
+    padding-bottom: 24%;
+    
 }
 
 .landing h1{
