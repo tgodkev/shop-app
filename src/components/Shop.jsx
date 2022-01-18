@@ -1,7 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Card from "./Card";
-import products from "./Products";
 import Okj from "./images/okjbronco.png"
 import longhorn from "./images/longhorn.png"
 import wichita from './images/wichita.jpg'

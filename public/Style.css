@@ -1,8 +1,10 @@
 body{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     font-family: 'Secular One', sans-serif;
+    min-height: 100%;
 }
+
 
 .arrow:hover{
     cursor: pointer;
@@ -12,6 +14,7 @@ body{
     position: sticky;
     width: 100%;
     background-color: #902923;
+    padding-top: 1%;
     
 }
 
@@ -19,6 +22,7 @@ body{
 .checkout{
     height: 100%;
     width: 100%;
+    padding-bottom: 32%;
     background-color: #B9BAA3;
 }
 
@@ -41,25 +45,28 @@ body{
 .landing{
     height: 100%;
     width: 100%;
+    padding-top: 1%;
     position: relative;
     color: red;
     background-image: url(./smoke.jpg);
     background-size: 50% 100%;
     background-repeat: no-repeat;
+    background-color: #0A100D;
     padding-bottom: 25%;
 }
 
 .landing h1{
     margin-left: 65%;
+    color: #902923;
 }
 
 
 .container{
     display: grid;
-    grid-template-columns: 50% 50% 50% ;
-    grid-template-rows: 50% 50% 50%;
+    grid-template-columns: 40% 40% 40% ;
+    grid-template-rows: 40% 40% 40%;
     margin-top: 10%;
-    margin-left: 20%
+    margin-left: 10%;
 
 }
 
@@ -67,7 +74,7 @@ body{
     display: inline-grid;
     text-align: center;
     height: auto;
-    width: 50%;
+    width: auto;
     background-color: #D6D5C9;
     grid-column: 1;
     grid-row: 1;
@@ -76,6 +83,7 @@ body{
 .one img{
     height: auto;
     width: 40%;
+    margin-left: 30%;
 }
 
 .one button{
@@ -87,7 +95,7 @@ body{
 .two{
     display: inline-grid;
     text-align: center;
-    width: 50%;
+    width: auto;
     margin-left: 15%;
     background-color: #D6D5C9;
     height: auto;
@@ -111,7 +119,7 @@ body{
     text-align: center;
     background-color: #D6D5C9;
     height: auto;
-    width: 50%;
+    width: auto;
     grid-column: 1;
     grid-row: 2;
     margin-top: 10%;
@@ -134,7 +142,7 @@ body{
     text-align: center;
     background-color: #D6D5C9;
     height: auto;
-    width: 50%;
+    width: auto;
     margin-left: 15%;
     margin-top: 0px;
     grid-column: 2;
@@ -161,9 +169,7 @@ body{
     text-align: center;
     background-color: #D6D5C9;
     height: auto;
-    width: 35%;
-    margin-left: 15%;
-    padding-bottom: 3%;
+    width: auto;
     grid-column: 1;
     grid: 2;
     margin-top: 10%;
