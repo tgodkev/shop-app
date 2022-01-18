@@ -85,20 +85,3 @@ import lang from './images/lang.jpg'
 }
 
 export default Shop;
-
-{/*function createCard(products){
-
-        
-
-    return(
-        <Card 
-            id={products.id}
-            key={products.id}
-            name={products.name}
-            description={products.description}
-            img={products.img}
-            price={products.price}
-            link={products.link}
-        />
-    )
-}*/}
