@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='landing'>
       <h1>Charcoal Grills only.</h1>
-      <UnstyledButtonCustom  className='button'/>
+      <UnstyledButtonCustom  className='btn'/>
     </div>
   );
 }
