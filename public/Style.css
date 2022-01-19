@@ -23,17 +23,17 @@
         background-size: 50% 100%;
         background-repeat: no-repeat;
         background-color: #0A100D;
+        padding-bottom: 25%;
         
        
     }
 
-    .btn{
-        margin-right: 20%;
-    }
+    @media screen and (max-width: 800px){
+        .landing{
+            padding-bottom: 90%;
+        }
 
-    .checkout{
-
-
+       
     }
 
     .arrow:hover{
@@ -52,7 +52,7 @@
     .checkout{
         height: 100%;
         width: 100%;
-        background-color: #B9BAA3;
+        padding-bottom: 32%;
     }
     
     .cart{
