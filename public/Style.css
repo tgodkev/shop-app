@@ -29,7 +29,15 @@
        
     }
 
-    @media screen and (max-width: 800px){
+    .landing h1{
+        margin-left: 55%;
+        color: #902923;
+        font-size: 60px;
+}
+
+
+
+    @media screen and (max-width: 900px){
         .landing{
             padding-bottom: 102%;
             padding-top: 1%;
@@ -38,8 +46,9 @@
 
         }
         .landing h1{
-            margin-left: 75%;
-            color: #902923;
+                margin-left: 68%;
+                color: #902923;
+                font-size: 40px;
         }
 
     
@@ -77,13 +86,7 @@
     .cart:hover{
         transform: rotate(1deg);
     }
-    
-    
-    
-    .landing h1{
-        margin-left: 65%;
-        color: #902923;
-    }
+
     
     
     
