@@ -76,10 +76,11 @@
     }
     
     .cart{
-        margin-left: 40%;
+        margin-left: 20%;
         margin-top: 10%;
         border: solid;
-        width: 20%;
+        height: auto;
+        width: 50%;
        background-color: #D6D5C9;
     }
     
@@ -87,6 +88,9 @@
         transform: rotate(1deg);
     }
 
+    .cart button{
+        margin-left: 40%;
+    }
     
     
     

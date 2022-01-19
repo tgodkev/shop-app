@@ -17,6 +17,8 @@ function RouteSwitch(){
         value: '',
     
     }])
+
+    const[amount, setAmount] = useState(0);
     
     
 
@@ -34,6 +36,7 @@ function RouteSwitch(){
             
             }
         ])
+        setAmount(amount + 1)
             
 }
     
@@ -45,7 +48,7 @@ function RouteSwitch(){
                 <Route path='/' element={<App />} />
                 <Route path='/shop' element={<Shop add={addItem} />} />
                 <Route path='/cart' element={<Cart bag={cart} /> } />
-                <Route path='/navbar' element={<Navbar  />} />
+                <Route path='/navbar' element={<Navbar total={amount}  />} />
                 
             </Routes>
         </BrowserRouter>
