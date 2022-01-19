@@ -30,11 +30,15 @@
 
     @media screen and (max-width: 800px){
         .landing{
-            padding-bottom: 92%;
+            padding-bottom: 100%;
             padding-top: 1%;
             background-size: 60% 100%;
-            padding-right: 5%;
+            padding-right: 10%;
 
+        }
+        .landing h1{
+            margin-left: 75%;
+            color: #902923;
         }
 
     
