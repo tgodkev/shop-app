@@ -30,7 +30,7 @@
 
     @media screen and (max-width: 800px){
         .landing{
-            padding-bottom: 100%;
+            padding-bottom: 102%;
             padding-top: 1%;
             background-size: 60% 100%;
             padding-right: 10%;
@@ -104,8 +104,9 @@
     }
     
     .one button{
-        height: auto;
-        width: auto;
+        height: 80%;
+        width: 60%;
+        margin-left: 25%;
     }
     
     .two{
@@ -126,8 +127,9 @@
     }
     
     .two button{
-        height: auto;
-        width: auto;
+        height: 90%;
+        width: 60%;
+        margin-left: 25%;
     }
     
     .three{
@@ -148,8 +150,9 @@
     }
     
     .three button{
-        height: auto;
-        width: auto;
+        height: 90%;
+        width: 60%;
+        margin-left: 25%;
     }
     
     .four{
@@ -174,9 +177,9 @@
     }
     
     .four button{
-        height: 60%;
-        height: auto;
-        width: auto;
+        height: 40%;
+        width: 60%;
+        margin-left: 25%;
     }
     
     .five{
@@ -201,8 +204,9 @@
     }
     
     .five button{
-        height: auto;
-        width: auto;
+        height: 90%;
+        width: 60%;
+        margin-left: 25%;
     }
     
     
