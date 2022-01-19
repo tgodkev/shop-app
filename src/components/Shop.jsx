@@ -55,7 +55,7 @@ import lang from './images/lang.jpg'
                 <div className="four">
                     <h1>lang 36" smoker series'</h1>
                     <img src={lang} alt="" />
-                        <h2>$499</h2>
+                        <h2>$2,195</h2>
                         <h3>The 36" smoker cooker has 6 cubic feet of cooking space and hold approximately 60-72 pounds of food with room to spare.</h3>
                         <button
                         name={'Lang 36"'}
