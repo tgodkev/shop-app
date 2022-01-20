@@ -8,7 +8,7 @@ function Cart(props){
         <Navbar />
             <div className="cart">
             
-                {props.bag.map( cart => <h4>{cart.name} {cart.value}</h4>)}
+                {props.bag.map( cart => <h4>{cart.name} {cart.value} </h4>)}
             <button
             onClick={() => {
                 alert('you have checked out, thank you for shopping with us !')
