@@ -10,8 +10,8 @@
 
     .container{
         display: grid;
-    grid-template-columns: 50% 50% 50% ;
-    grid-template-rows: 50% 50% 50%;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 50% 50% 50% 50%;
     margin-top: 10%;
     height: 100%;
     width: 100%;
@@ -201,9 +201,8 @@
         height: auto;
         width: 100%;
         grid-column: 1;
-        grid: 2;
+        grid: 3;
         margin-top: 10%;
-        margin-left: 60%;
         margin-bottom: 2%;
     
     
@@ -222,7 +221,31 @@
     }
     
     
-
+    .six{
+        display: inline-grid;
+        text-align: center;
+        background-color: #D6D5C9;
+        height: auto;
+        width: 100%;
+        grid-column: 2;
+        grid: 2;
+        margin-top: 10%;
+        margin-bottom: 2%;
+        margin-left: 15%;
+    
+    
+    }
+    .six img{
+        height: auto;
+        width: 50%;
+        margin-left: 20%;
+    }
+    
+    .six button{
+        height: 90%;
+        width: 60%;
+        margin-left: 25%;
+    }
 
 }
 

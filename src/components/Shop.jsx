@@ -5,6 +5,7 @@ import longhorn from "./images/longhorn.png"
 import wichita from './images/wichita.jpg'
 import weber from './images/weber.jpeg'
 import lang from './images/lang.jpg'
+import jd from './images/jd.jpg'
 
 
 
@@ -75,7 +76,17 @@ import lang from './images/lang.jpg'
                         >add to cart.</button>
                 </div>
             
-            
+                <div className="six">
+                    <h1>Jealous Devil Lump Charcoal.</h1>
+                    <img src={jd} alt=" charcoal" />
+                        <h2>$49.95</h2>
+                        <h3> Our flagship charcoal is a super-size, ultra-premium lump. Crafted from one of the densest hardwoods on the planet and specially carbonized to remove impurities. The result? Hotter, longer, and cleaner burns with incredible flavor. Without sparks, pops, bitter smoke or excessive ash. </h3>
+                        <button
+                        name='Jealous Devil Lump Charcoal.'
+                        value= '$49.95'
+                        onClick={props.add}
+                        >add to cart.</button>
+                </div>
             
             
             </div>

@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className='landing'>
-      <h1>Catchy Name Here.</h1>
+      <h1>Charcoal Grills and Accessories.</h1>
       <UnstyledButtonCustom  className='uno'/>
     </div>
   );
