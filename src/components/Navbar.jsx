@@ -4,7 +4,7 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from "react-router-dom";
 
-function Navbar(props){
+function Navbar(){
 
     const[ menu, setMenu] = useState(false);
     const[upArrow, setUpArrow] = useState(false);
@@ -41,7 +41,7 @@ function Navbar(props){
                 { menu && <ul>
                 <Link to='/shop'>Shop</Link>
                 </ul>}
-                {menu && <ul> <Link to='/cart'> <ShoppingCartIcon/> <p>{props.total}</p></Link> </ul>}
+                {menu && <ul> <Link to='/cart'> <ShoppingCartIcon/></Link> </ul>}
             </li>
         
            
